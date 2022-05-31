@@ -1,7 +1,7 @@
 encryptionsalt: v1:Jl+SxzXzMi8=:v1:g5QngNFO3nfc7Qud:7v4BP1gjAtX6HYix/k9731pRbgHtfA==
 config:
   pulumi-oci-python-oke:app_name_prefix: pulumi_oke
-  pulumi-oci-python-oke:compartment_ocid: ocid1.compartment.oc1..aaaaaaaalmc42p5bsqbfo5jkle7uy7bwnlazr7ghw26qorsidrwbl6mk6xva
+  pulumi-oci-python-oke:compartment_ocid: dummy_oci
   pulumi-oci-python-oke:internetgateway_name: oke_internetgateway
   pulumi-oci-python-oke:kubernetes_version: v1.23.4
   pulumi-oci-python-oke:natgateway_name: oke_natgateway
@@ -9,7 +9,7 @@ config:
   pulumi-oci-python-oke:oke_apiendpoint_seclist_name: oke_apiendpoint_seclist
   pulumi-oci-python-oke:oke_apisubnet_cidr: 10.0.0.0/28
   pulumi-oci-python-oke:oke_apisubnet_displayname: oke_apiendpoint_subnet
-  pulumi-oci-python-oke:oke_cluster_name: pulumi-mr
+  pulumi-oci-python-oke:oke_cluster_name: pulumi-python-oke
   pulumi-oci-python-oke:oke_is_public_ip_enabled: "True"
   pulumi-oci-python-oke:oke_lbsubnet_cidr: 10.0.20.0/24
   pulumi-oci-python-oke:oke_lbsubnet_displayname: oke_svclb_subnet
