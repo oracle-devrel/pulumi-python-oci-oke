@@ -30,4 +30,11 @@ Temporary Items
 .key
 .crt
 .csr
-.pem
+.pem*.pyc
+.DS_Store
+venv/
+*.tfvars
+.idea**
+**test**
+pulumi_state_local/**
+**pulumi_state_local**
