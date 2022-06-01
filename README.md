@@ -43,7 +43,7 @@ $ pulumi login file://pulumi-state-local
 
 ![](images/pulumi_local.png)
 
-- Create a new pulumi stack - `pulumi new https://github.com/RahulMR42/oci-pulumi-python-oke ` --force
+- Create a new pulumi stack - `pulumi new https://github.com/oracle-devrel/pulumi-python-oci-oke ` --force
 - Do not need to use `--force ` for login with Pulumi managed infra state mode.
 
 ![](images/pulumi_new_with_url.png)
