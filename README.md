@@ -87,7 +87,7 @@ cat "PATH TO PEMFILE " | pulumi config set oci:privateKey --secret
 
 - Set compartment_ocid as a config value.
 ```markdown
-pulumi config set compartment_ocid "OCID of your compartment"
+pulumi config set compartment_ocid "OCID of your compartment" --secret
 ```
 - You may verify the values of your stack using the file `Pulumi.pulumi-oci-python-oke.yaml`
   ![](images/pulumi_config_yaml.png)
