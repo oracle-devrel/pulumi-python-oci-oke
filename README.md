@@ -65,7 +65,6 @@ $ pulumi login file://pulumi-state-local
 - Set below   the environment variables Or with Secret configs - https://www.pulumi.com/registry/packages/oci/installation-configuration/
 
 - As ENV values.
--
 ```markdown
 export TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..<unique_ID>"
 export TF_VAR_user_ocid="ocid1.user.oc1..<unique_ID>"
@@ -74,7 +73,7 @@ export TF_VAR_region="us-ashburn-1"
 export TF_VAR_private_key_file="/path/to/oci_api_key.pem"
 ```
 
-- As encrypted secrets (Within pulumi config control/Not with OCI Vault)
+- Or As encrypted secrets (Within pulumi config control/Not with OCI Vault)
 
 ```markdown
 pulumi config set oci:tenancyOcid "ocid1.tenancy.oc1..<unique_ID>" --secret
@@ -83,6 +82,7 @@ pulumi config set oci:fingerprint "<key_fingerprint>" --secret
 pulumi config set oci:region "us-ashburn-1"
 # Set the private key from standard input to retain the format
 cat "PATH TO PEMFILE " | pulumi config set oci:privateKey --secret
+export TF_VAR_tenancy_ocid="ocid1.tenancy.ocX..<unique_ID>"
 ```
 
 - Set compartment_ocid as a config value.
