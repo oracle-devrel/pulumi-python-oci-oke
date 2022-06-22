@@ -33,7 +33,7 @@ class oke:
 
     def create_nodepool(self,config,oke_cluster,node_subnet):
         try:
-            get_ad_name = oci.identity.get_availability_domain(compartment_id=os.environ['TF_VAR_tenancy_ocid'],ad_number=1)
+            get_ad_name = oci.identity.get_availability_domain(compartment_id=config.get('compartment_ocid'),ad_number=1)
             node_image = oci.core.get_images(compartment_id=config.get('compartment_ocid'),
                                               operating_system=config.get('oke_node_operating_system'),
                                               operating_system_version=config.get('oke_operating_system_version'),
